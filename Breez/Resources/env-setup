@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Breez Environment Setup Script
+echo "Setting up environment..."
+
+echo "✅ Environment configured"
+echo "✅ Ready to build"

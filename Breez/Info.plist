@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key>
+    <string>Breez</string>
+    <key>CFBundleName</key>
+    <string>Breez</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.a17.breez</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIRequiresFullScreen</key>
+    <true/>
+    <key>NSCameraUsageDescription</key>
+    <string>Breez needs camera access to capture photos for environmental reports</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Breez needs photo library access to select images for environmental reports</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Breez uses your location to provide location-based environmental activities and reports</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Breez uses your microphone to record audio for environmental reports</string>
+    <key>NSUserNotificationsUsageDescription</key>
+    <string>Breez sends notifications to remind you about environmental activities and report updates</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>GoogleSignIn</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.139257237199-ljqnpcd11vahs69h7v8ejt98ntg7sbhk</string>
+            </array>
+        </dict>
+    </array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>ProximaNova-Semibold.otf</string>
+        <string>Frijole-Regular.ttf</string>
+    </array>
+</dict>
+</plist>

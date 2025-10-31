@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EFDF914D2EB2CBCB00EA4813 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EFDF914C2EB2CBCB00EA4813 /* GoogleSignIn */; };
+		EFDF91FB2EB2CCFE00EA4813 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EFDF91FA2EB2CCFE00EA4813 /* FirebaseAuth */; };
+		EFDF91FD2EB2CCFE00EA4813 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = EFDF91FC2EB2CCFE00EA4813 /* FirebaseCore */; };
+		EFDF91FF2EB2CCFE00EA4813 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EFDF91FE2EB2CCFE00EA4813 /* FirebaseFirestore */; };
+		EFDF92012EB2CCFE00EA4813 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EFDF92002EB2CCFE00EA4813 /* FirebaseStorage */; };
+		EFDF934F2EB2CF3D00EA4813 /* PhosphorSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EFDF934E2EB2CF3D00EA4813 /* PhosphorSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EFDF8FB12EAFDEA300EA4813 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +61,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDF914D2EB2CBCB00EA4813 /* GoogleSignIn in Frameworks */,
+				EFDF91FF2EB2CCFE00EA4813 /* FirebaseFirestore in Frameworks */,
+				EFDF91FD2EB2CCFE00EA4813 /* FirebaseCore in Frameworks */,
+				EFDF92012EB2CCFE00EA4813 /* FirebaseStorage in Frameworks */,
+				EFDF91FB2EB2CCFE00EA4813 /* FirebaseAuth in Frameworks */,
+				EFDF934F2EB2CF3D00EA4813 /* PhosphorSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +127,12 @@
 			);
 			name = Breez;
 			packageProductDependencies = (
+				EFDF914C2EB2CBCB00EA4813 /* GoogleSignIn */,
+				EFDF91FA2EB2CCFE00EA4813 /* FirebaseAuth */,
+				EFDF91FC2EB2CCFE00EA4813 /* FirebaseCore */,
+				EFDF91FE2EB2CCFE00EA4813 /* FirebaseFirestore */,
+				EFDF92002EB2CCFE00EA4813 /* FirebaseStorage */,
+				EFDF934E2EB2CF3D00EA4813 /* PhosphorSwift */,
 			);
 			productName = Breez;
 			productReference = EFDF8FA02EAFDEA100EA4813 /* Breez.app */;
@@ -195,6 +216,11 @@
 			);
 			mainGroup = EFDF8F972EAFDEA100EA4813;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EFDF914B2EB2CBCB00EA4813 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				EFDF914E2EB2CC2600EA4813 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EFDF934D2EB2CE8900EA4813 /* XCRemoteSwiftPackageReference "swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EFDF8FA12EAFDEA100EA4813 /* Products */;
 			projectDirPath = "";
@@ -393,12 +419,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Breez/Breez.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Breez/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Breez/Styles/Preview Content\"";
 				DEVELOPMENT_TEAM = D2A29W2UN7;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Breez/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,11 +438,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.a17.breez.Breez;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a17.breez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -422,12 +455,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Breez/Breez.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Breez/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Breez/Styles/Preview Content\"";
 				DEVELOPMENT_TEAM = D2A29W2UN7;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Breez/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,11 +474,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.a17.breez.Breez;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a17.breez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -558,6 +598,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFDF914B2EB2CBCB00EA4813 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		EFDF914E2EB2CC2600EA4813 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.5.0;
+			};
+		};
+		EFDF934D2EB2CE8900EA4813 /* XCRemoteSwiftPackageReference "swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/phosphor-icons/swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFDF914C2EB2CBCB00EA4813 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDF914B2EB2CBCB00EA4813 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		EFDF91FA2EB2CCFE00EA4813 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDF914E2EB2CC2600EA4813 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		EFDF91FC2EB2CCFE00EA4813 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDF914E2EB2CC2600EA4813 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		EFDF91FE2EB2CCFE00EA4813 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDF914E2EB2CC2600EA4813 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		EFDF92002EB2CCFE00EA4813 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDF914E2EB2CC2600EA4813 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		EFDF934E2EB2CF3D00EA4813 /* PhosphorSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDF934D2EB2CE8900EA4813 /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PhosphorSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EFDF8F982EAFDEA100EA4813 /* Project object */;
 }
